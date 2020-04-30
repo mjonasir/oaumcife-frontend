@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OAUMC - HOME</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <!-- <ul class="top-nav nav justify-content-end">
+      <li class="nav-item">
+        <span>
+          Follow us on
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          Contact Us
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+2348030545990">+2348030545990</a>
+        </span>
+      </li>
+    </ul> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../img/oaulogo.jpg"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        OAUMC
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Executives
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Committees</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Camp Registration</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"> News</a></li>
+          <li class="nav-item">
+            <!-- <a class="nav-link" href="#"> Download Friday Sermons</a> -->
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Programmes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Jumu'at Service</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Eid Service</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Ramadan Lecture</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Seminars and Workshops</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="camp.php">Holiday Programmes</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="admin">
+      <aside class="">
+        <h5>Admin Menu</h5>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">Dashboard</a>
+          </li>
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">Registrants</a>
+          </li>
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#"
+              >Welcome Note, Mission, & Events</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#"
+              >Executives, Mission Board & Ex-Officials</a
+            >
+          </li>
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">Committees</a>
+          </li>
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#">News</a>
+          </li>
+          <li class="list-group-item">
+            <a class="list-group-item-action" href="#"
+              >Upload Carousel Images</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main class="dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h5 class="mb-3">Edit User</h5>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <form action="" method="POST">
+                <div class="form-group">
+                  <label for="post">User Category:</label>
+                  <select name="post" id="" class="form-control" required>
+                      <option value="0">Select Category</option>
+                      <option value="admin">Admin</option>
+                      <option value="adhoc" selected>Adhoc</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="name">Full Name:</label>
+                  <input type="text" class="form-control" name="name" placeholder="Full Name" value="Full Name" required />
+                </div>
+                <div class="form-group">
+                  <label for="name">Email:</label>
+                  <input type="email" class="form-control" name="email" placeholder="Email" value="email@email.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="name">Phone:</label>
+                  <input type="text" class="form-control" name="phone" placeholder="08012345678" value="08012345678" required />
+                </div>
+
+                <hr>
+                <h6>Permisssions</h6>
+                <div class="form-group">
+                  <label for="manage-users" class="form-control">
+                    <input type="checkbox" id="manage-users" name="manage-users"> Can Manage Users
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="manage-template" class="form-control">
+                    <input type="checkbox" id="manage-template" name="manage-template" checked> Can Manage Template
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="manage-camps" class="form-control">
+                    <input type="checkbox" id="manage-camps" name="manage-camps"> Can Manage Camps
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="manage-committees" class="form-control">
+                    <input type="checkbox" id="manage-committees" name="manage-committees"> Can Manage Committees
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label for="manage-news" class="form-control">
+                    <input type="checkbox" id="manage-news" name="manage-news" checked> Can Manage News
+                  </label>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="btn btn-success form-control">
+                    Update
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12">
+          <p>Copyright &copy; 2020 OAUMC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+  </body>
+</html>
