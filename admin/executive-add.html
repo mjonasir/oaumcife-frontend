@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="../css/all.min.css" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/admin.css" />
+
+  <script src="../js/tinymce/tinymce.min.js"></script>
+  <script>
+    tinymce.init({
+      selector: '#executive-description'
+    });
+  </script>
 </head>
 
 <body>
@@ -111,7 +118,7 @@
               </div>
               <div class="form-group">
                 <label for="decription">Description</label>
-                <textarea class="form-control" name="decription" id="decription" rows="5"
+                <textarea class="form-control" name="decription" id="executive-description" rows="5"
                   placeholder="What is this committee about" required></textarea>
               </div>
               <!-- <div class="form-group">

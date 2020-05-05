@@ -10,6 +10,13 @@
   <link rel="stylesheet" href="../css/all.min.css" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/admin.css" />
+
+  <script src="../js/tinymce/tinymce.min.js"></script>
+  <script>
+    tinymce.init({
+      selector: '#camp-description'
+    });
+  </script>
 </head>
 
 <body>
@@ -141,8 +148,8 @@
 
               <div class="form-group">
                 <label for="content">Description</label>
-                <textarea class="form-control" name="contect" id="new-content" rows="5"
-                  placeholder="A details description including the requirements and neccessary links"
+                <textarea class="form-control" name="contect" id="camp-description" rows="10"
+                  placeholder="A detailed description including the requirements and neccessary links"
                   required></textarea>
               </div>
 

@@ -10,6 +10,19 @@
   <link rel="stylesheet" href="../css/all.min.css" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/admin.css" />
+
+  <script src="../js/tinymce/tinymce.min.js"></script>
+  <script>
+    tinymce.init({
+      selector: '#welcome-note'
+    });
+    tinymce.init({
+      selector: '#mission'
+    });
+    tinymce.init({
+      selector: '#where-we-are'
+    });
+  </script>
 </head>
 
 <body>
@@ -200,7 +213,7 @@
             <h5>Welcome Note</h5>
             <form action="" method="POST">
               <div class="form-group">
-                <textarea name="" rows="3" class="form-control"></textarea>
+                <textarea name="" rows="3" id="welcome-note" class="form-control"></textarea>
               </div>
               <div class="form-group">
                 <button class="btn btn-success btn-sm form-control">
@@ -214,7 +227,7 @@
             <h5>Mission</h5>
             <form action="" method="POST">
               <div class="form-group">
-                <textarea name="" rows="3" class="form-control"></textarea>
+                <textarea name="" rows="3" id="mission" class="form-control"></textarea>
               </div>
               <div class="form-group">
                 <button class="btn btn-success btn-sm form-control">
@@ -225,10 +238,10 @@
           </div>
 
           <div class="col-md-6 mb-3">
-            <h5>Where Were Are</h5>
+            <h5>Where We Are</h5>
             <form action="" method="POST">
               <div class="form-group">
-                <textarea name="" rows="3" class="form-control"></textarea>
+                <textarea name="" rows="3" id="where-we-are" class="form-control"></textarea>
               </div>
               <div class="form-group">
                 <button class="btn btn-success btn-sm form-control">
