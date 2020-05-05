@@ -1,100 +1,100 @@
 :root {
-    --color-green : #1D4F29;
+  --color-green: #1d4f29;
 }
 
 body {
-    color: var(--color-green);
+  color: var(--color-green);
 }
 
 .top-nav {
-    background-color: var(--color-green);
-    color: white;
+  background-color: var(--color-green);
+  color: white;
 }
 
 .top-nav a {
-    color: inherit;
+  color: inherit;
 }
 
 .top-nav i {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 nav.navbar {
-    background-color: var(--color-green) !important;
+  background-color: var(--color-green) !important;
 }
 
 nav.navbar .navbar-brand img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
-section#slider .carousel-caption{
-    background-color: #000000a1;
-    margin: 0;
-    left: 0;
-    right: 0;
+section#slider .carousel-caption {
+  background-color: #000000a1;
+  margin: 0;
+  left: 0;
+  right: 0;
 }
 
-section#slider .carousel-indicators{
-    background-color: #000000a1;
-    margin: 0;
+section#slider .carousel-indicators {
+  background-color: #000000a1;
+  margin: 0;
 }
 
-section#slider .carousel-item{
-    max-height: 85vh;
+section#slider .carousel-item {
+  max-height: 85vh;
 }
 
 section#slider .carousel-control-prev-icon,
 section#slider .carousel-control-next-icon {
-    background-color: #1D4F29;
-    border-radius: 50%;
-    color: white;
-    min-width: 25px;
-    min-height: 25px;
+  background-color: #1d4f29;
+  border-radius: 50%;
+  color: white;
+  min-width: 25px;
+  min-height: 25px;
 }
 
 section#welcome {
-    padding-top: 40px;
+  padding-top: 40px;
 }
 
 section#welcome ul.list-group {
-    margin-top: 15px;
-    margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 section#welcome ul.list-group li {
-    padding-top: 5px;
-    padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 section#news {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 section#news h3 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 section#news .section-content {
-    justify-content: space-between;
-    flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-section#news .section-content .news-item{
-    padding: 0;
-    margin: 10px 0;
+section#news .section-content .news-item {
+  padding: 0;
+  margin: 10px 0;
 }
 
-section#news .section-content .news-item .card{
-    margin: auto;
-    max-width: 96%;
+section#news .section-content .news-item .card {
+  margin: auto;
+  max-width: 96%;
 }
 
 footer {
-    background-color: var(--color-green);
+  background-color: var(--color-green);
 }
 
 footer p {
-    color: white;
-    margin: 0;
-    padding: 7px;
+  color: white;
+  margin: 0;
+  padding: 7px;
 }
