@@ -9,6 +9,7 @@ body {
 .top-nav {
   background-color: var(--color-green);
   color: white;
+  padding: 0px 10px;
 }
 
 .top-nav a {
